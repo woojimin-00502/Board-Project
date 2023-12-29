@@ -16,7 +16,7 @@
 <div id="center">
     <div class="login-wrapper">
         <h2>Project_Board</h2>
-        <form method="post" id="login-form">
+        <form method="post"action="/login_check.do" id="login-form">
             <input type="text" name="userid" placeholder="Email" id="userid">
             <input type="password" name="passwd" placeholder="Password" id="passwd">
             <label for="remember-check">

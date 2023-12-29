@@ -4,10 +4,10 @@
 
 <mapper namespace="com.thehambiz.test.dao.LoginDao">
 
-	<select id="login_check" resultType="String">
-		select name
-  		from dbo.notice_board
-  		where userid=#{userid} and passwd=#{passwd}
+	<select id="login_check" resultType="Map">
+        SELECT passwd
+        FROM dbo.notice_board
+        WHERE userid = #{userid}
 	</select>
 
 </mapper>
